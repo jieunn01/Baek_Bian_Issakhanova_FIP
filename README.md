@@ -54,8 +54,8 @@ gulp install
 
 **Issakhanova Gaukhar**
 
-- [Profile](https://github.com/ " ")
-- [Email](email_address@google.com "Hi!")
+- [Profile](https://github.com/Jane-Goza/ "Issakhanova Gaukhar")
+- [Email](gauharaisahanova@gmail.com "Hi!")
 - [Website](https:// "Welcome")
 
 ### 📝 License
