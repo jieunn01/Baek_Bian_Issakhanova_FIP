@@ -1,6 +1,6 @@
 # MSF Campaign 2022
 
-<img src="src/assets/MSF_logo.png" alt="MSF original logo" width="450">
+<img src="fip-front/src/assets/MSF_logo.png" alt="MSF original logo" width="450">
 
 ### About MSF Campaign
 
