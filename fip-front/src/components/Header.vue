@@ -1,12 +1,9 @@
 <template>
     <header class="header">
-        <div class="container">
-                <div class="logo">
                     <a class="logoLink" href="#">
                         <img src="@/assets/images/logo.png" alt="logo">
                     </a>
-                </div>
-                <div class="">
+                <div>
                     <nav class="navbar">
                         <div id="nav">
                             <router-link class="navbarA" to="/">Home</router-link>
@@ -16,7 +13,6 @@
                         <router-view/>
                     </nav>
                 </div>
-        </div>
     </header>
 </template>
 
@@ -27,5 +23,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "src/assets/sass/header.scss";
+  @import "@/assets/sass/main.scss";
 </style>

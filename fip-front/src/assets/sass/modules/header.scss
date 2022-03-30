@@ -1,0 +1,66 @@
+.header {
+    height: 95px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1280px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoLink img{
+    width: 46px;
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+}
+
+#nav {
+    padding: 0;
+    padding-left: 30px;
+}
+
+#nav a.router-link-exact-active {
+    color: #14274F;
+    }
+
+.navbarA {
+    text-decoration: none;
+    color: #FBFBFB;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+ 
+.navbarA:hover{
+    color: #FBFBFB;
+}
+
+@media screen and (min-width: 500px) {
+
+    #nav {
+        padding-left: 180px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 132px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding: auto;
+    }
+    
+    .logoLink img{
+        width: 89px;
+    }
+
+    .navbarA {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
