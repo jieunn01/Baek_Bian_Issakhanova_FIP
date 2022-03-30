@@ -1,6 +1,70 @@
 @import "reset";
 @import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
+@import './modules/header.scss';
+@import './modules/footer.scss';
+@import './modules/home.scss';
 
 * {
   box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+p, h1, h2, h4, h5, h6, b {
+    text-align: left;
+    font-family: 'Red Hat Display', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Merienda', Arial, sans-serif;
+    margin-top: 0;
+}
+
+h4 {
+    color: #14274F;
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+span {
+    color: #EE0000;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 26px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
 }
