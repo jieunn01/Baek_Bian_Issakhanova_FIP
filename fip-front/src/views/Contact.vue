@@ -1,5 +1,5 @@
 <template>
-<section>
+<div>
   <section class="mapWrap">
     <h2 class="title">
       <span class="material-icons"> hearing </span>DO YOU NEED MORE INFORMATION?
@@ -107,7 +107,7 @@
       </div>
     </div>
   </section>
-</section>
+</div>
 </template>
 <script>
 // @ is an alias to /src
@@ -171,7 +171,7 @@ export default {
       }
 
       // php 경로 잡히면 그 경로로 바꾸면 됩니다!
-      fetch('https://localhost:3000/send.php', {
+      fetch('https://localhost:8080/includes/send.php', {
         method: 'POST',
         body: reqFormData,
       })

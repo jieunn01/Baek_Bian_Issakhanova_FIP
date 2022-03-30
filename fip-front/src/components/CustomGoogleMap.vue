@@ -57,15 +57,18 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 6%;
-  padding-right: 6%;
+  // padding-left: 6%;
+  // padding-right: 6%;
   width: 100%;
   gap: 20px;
   .map {
+    padding-left: 6%;
+    padding-right: 6%;
     width: 100%;
     height: 200px;
   }
   .inform {
+    padding-right: 6%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -79,16 +82,17 @@ export default {
 @media screen and (min-width: 1280px) {
   .mapSection {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding: 0 10%;
-    gap: 10%;
+    // gap: 10%;
     .map {
-      min-width: 494px;
+      max-width: 500px;
       width: 100%;
       min-height: 233px;
     }
     .inform {
       width: auto;
+      padding-right: 0;
       li {
         font-size: 18px;
       }
