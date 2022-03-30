@@ -58,7 +58,6 @@
                      water and sanitation, food or other services.</p>
             </div>
     </div>
-
     <div class="statistics">
             <h3>CLEAR RESULTS with 2020</h3>
             <div class="numbers">
@@ -124,7 +123,6 @@
                 </div>
             </div>
     </div>
-
     <div class="donation">
             <h3>HOW YOUR DONATIONS ARE USED</h3>
             <p>Your donations pay for millions of consultations, surgeries,
