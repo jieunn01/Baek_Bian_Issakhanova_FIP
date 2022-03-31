@@ -31,6 +31,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Red+Hat+Display&display=swap');
+
 .CounterWrap {
   display: flex;
   flex-direction: column;
@@ -38,6 +41,7 @@ export default {
   gap: 24px;
   padding: 0 6%;
   .title {
+    font-family: 'Merienda', Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;

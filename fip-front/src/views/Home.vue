@@ -114,10 +114,6 @@
             </div>
     </div>
     <div class="donation">
-            <h3>HOW YOUR DONATIONS ARE USED</h3>
-            <p>Your donations pay for millions of consultations, surgeries,
-                 treatments and vaccinations every year.</p>
-
             <CustomCounter
                 title="HOW YOUR DONATIONS ARE USED"
                 paragraph="Your donations pay for millions of consultations, surgeries,
