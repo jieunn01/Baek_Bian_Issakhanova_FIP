@@ -170,7 +170,6 @@ export default {
         reqFormData.append(key, this.formData[key]);
       }
 
-      // php 경로 잡히면 그 경로로 바꾸면 됩니다!
       fetch('https://localhost:8080/includes/send.php', {
         method: 'POST',
         body: reqFormData,

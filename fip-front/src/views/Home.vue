@@ -59,26 +59,16 @@
             </div>
     </div>
     <div class="statistics">
-            <h3>CLEAR RESULTS with 2020</h3>
-            <div class="numbers">
-                <div>
-                    <b>88</b>
-                    <p>COUTRIES</p>
-                </div>
-                <div>
-                    <b>3,210,000</b>
-                    <p>COVID-19 test</p>
-                </div>
-                <div>
-                    <b>302</b>
-                    <p>COVID-19 response activities</p>
-                </div>
-                <div>
-                    <b>112,000</b>
-                    <p>Outpatient treatment for suspected COVID-19 patients</p>
-                </div>
-            </div>
-
+            <CustomCounter
+            title="CLEAR RESULTS with 2020"
+            paragraph="''"
+            :values="[
+            { value: 88.0000, text: 'COUNTRIES' },
+            { value: 3210000, text: 'COVID-19 TEST' },
+            { value: 302, text: 'COVID-19 RESPONSIVE ACTIVITIESS' },
+            { value: 112000, text: 'OUTPATIENT TREATMENT FOR SUSPECTED COVID-19 PATIENTS' },
+            ]"
+            />
             <div class="graphs">
                 <div class="incomes">
                     <h5>INCOMES</h5>
@@ -128,20 +118,16 @@
             <p>Your donations pay for millions of consultations, surgeries,
                  treatments and vaccinations every year.</p>
 
-            <div class="numbers">
-                <div>
-                    <b>9,904,200</b>
-                    <p>OUTPATIENT CONSULTATIONS</p>
-                </div>
-                <div>
-                    <b>1,008,500</b>
-                    <p>VACCINATIONS AGAINST MEASLES IN RESPONSE TO AN OUTBREAK</p>
-                </div>
-                <div>
-                    <b>877,300</b>
-                    <p>PATIENTS ADMITTED</p>
-                </div>
-            </div>
+            <CustomCounter
+                title="HOW YOUR DONATIONS ARE USED"
+                paragraph="Your donations pay for millions of consultations, surgeries,
+            treatments and vaccinations every year."
+                :values="[
+                { value: 9904200, text: 'OUTPATIENT CONSULTATIONS' },
+                { value: 1008500, text: 'VACCINATIONS AGAINST MEASLES IN RESPONSE TO AN OUTBREAK' },
+                { value: 877300, text: 'PATIENTS ADMITTED' },
+                ]"
+            />
             <button>DONATE</button>
     </div>
 
@@ -169,12 +155,14 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
+import CustomCounter from "../components/CustomCounter.vue";
 
 export default {
   name: 'Home',
   components: {
     Header,
     Footer,
+    CustomCounter,
   },
 };
 </script>
