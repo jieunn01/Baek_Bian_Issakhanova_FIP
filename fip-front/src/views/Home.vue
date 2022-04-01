@@ -5,7 +5,11 @@
             <div class="promo_text">
                 <h1>MÉDECINS SANS FRONTIÈRES</h1>
                 <h2>DON'T NEED BORDERS TO SAVE LIVES</h2>
+<<<<<<< Updated upstream
                 <button type="button">DONATE</button>
+=======
+                <button class="contactBtn" type="button">DONATE</button>
+>>>>>>> Stashed changes
             </div>
     </div>
 
@@ -168,7 +172,7 @@
                     <p>PATIENTS ADMITTED</p>
                 </div>
             </div>
-            <button>DONATE</button>
+            <button class="contactBtn" type="button">DONATE</button>
     </div>
 
     <div class="banner" :style="banner">
@@ -177,14 +181,22 @@
                 <!--Don't forget to add on styles font-sixe 11, bold-->
                 <b>It takes less than 5 seconds to donate using the QR code.
                      Meet MSF on your way to work.</b>
+<<<<<<< Updated upstream
                 <button>ABOUT</button>
+=======
+                <button class="contactBtn" type="button">ABOUT</button>
+>>>>>>> Stashed changes
                 </div>
                 <div class="offline">
                 <h1>OFFLINE</h1>
                 <!--Don't forget to add on styles font-sixe 11, bold (desktop20)-->
                 <b>Use the online form to apply for volunteer work.
                      We're always waiting for you.</b>
+<<<<<<< Updated upstream
                 <button>CONTACT</button>
+=======
+                <button class="contactBtn" type="button">CONTACT</button>
+>>>>>>> Stashed changes
                 </div>
     </div>
   </div>
