@@ -1,10 +1,4 @@
 <template>
-<<<<<<< Updated upstream
-   <Header />
-  <div class="#weTogether">
-    <h1>This is an contact page</h1>
-  </div>
-=======
 <Header />
 <div>
   <section class="mapWrap">
@@ -115,7 +109,6 @@
     </div>
   </section>
 </div>
->>>>>>> Stashed changes
 <Footer />
 </template>
 <script>
@@ -124,12 +117,6 @@ import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
-  name: 'Campaign',
-  components: {
-    Header,
-    Footer,
-  },
-
   name: 'Contact',
   components: {
     Header,
