@@ -1,15 +1,21 @@
 <template>
   <Header />
-  <div class="home">
-    <div class="promo">
-            <img src="@/assets/images/map.jpg" alt="map">
-            <h1>MÉDECINS SANS FRONTIÈRES</h1>
-            <h2>DON'T NEED BORDERS TO SAVE LIVES</h2>
-            <button type="button">DONATE</button>
+  <div class="container">
+    <div class="promo" :style="promo">
+            <div class="promo_text">
+                <h1>MÉDECINS SANS FRONTIÈRES</h1>
+                <h2>DON'T NEED BORDERS TO SAVE LIVES</h2>
+<<<<<<< Updated upstream
+                <button type="button">DONATE</button>
+=======
+                <button class="contactBtn" type="button">DONATE</button>
+>>>>>>> Stashed changes
+            </div>
     </div>
 
-    <div>
-            <h3>WHO IS MSF?</h3>
+    <div class="MSF">
+            <h3>WHO IS <span>MSF?</span></h3>
+            <div class="MSF_content">
             <p>Médecins Sans Frontières/Doctors Without Borders  (MSF) translates to Doctors
                  without Borders. We provide medical assistance to people affected by conflict,
                  epidemics, disasters, or exclusion from healthcare. Our teams are made up of
@@ -17,37 +23,43 @@
                  bound together by our charter. Our actions are guided by medical ethics and
                  the principles of impartiality, independence and neutrality.
                  We are a non-profit, self-governed, member-based organisation.</p>
-            <!--<video src="@/assets/images/"></video>-->
+
+                <video id="videoPromo" src="@/assets/images/fip_video.mp4" controls="controls">
+                </video>
+            </div>
     </div>
 
     <div class="principles">
-            <h3>Our working principles</h3>
-            <div>
-                <h4>1. Impartial</h4>
+            <h3>OUR WORKING PRINCIPLES</h3>
+            <div class="principles_content">
+            <div class="principles_desc">
+                <h4>1. IMPARTIAL</h4>
                 <p>We provide free medical care to people who need it.
                      It doesn't matter which country they are from,
                      which religion they belong to, or what their political affiliations are.
                      All that matters is they are human beings in need.</p>
             </div>
 
-            <div>
-                <h4>2. Neutral</h4>
+            <div class="principles_desc">
+                <h4>2. NEUTRAL</h4>
                 <p>In a conflict situation, we don't take sides,
                      but go where people's medical needs are greatest.
                      In the ward of one of our field hospitals, you might find
                      wounded civilians alongside injured soldiers from opposing sides.
                      Hostilities and weapons must be left at the gate.</p>
             </div>
+            </div>
 
-            <div>
-                <h4>3. Independent</h4>
+            <div class="principles_content">
+            <div class="principles_desc">
+                <h4>3. INDEPENDENT</h4>
                 <p>We rarely take funds from governments or public funds for our work.
                      We rely on private donations, mainly from individual members
                      of the public. Over 90 percent of our income comes from private donors.</p>
             </div>
 
-            <div>
-                <h4>4. Medical ethics</h4>
+            <div class="principles_desc">
+                <h4>4. MEDICAL ETHICS</h4>
                 <p>MSF's actions are first and foremost medical.
                      Quality medical care for the individual patient is central
                      to our humanitarian objective. We seek to provide high-quality
@@ -57,69 +69,85 @@
                      assistance alone is not enough, we may provide shelter,
                      water and sanitation, food or other services.</p>
             </div>
+            </div>
     </div>
     <div class="statistics">
             <h3>CLEAR RESULTS with 2020</h3>
             <div class="numbers">
-                <div>
+                <div class="numbers_content">
                     <b>88</b>
                     <p>COUTRIES</p>
                 </div>
-                <div>
+                <div class="numbers_content">
                     <b>3,210,000</b>
-                    <p>COVID-19 test</p>
+                    <p>COVID-19 TEST</p>
                 </div>
-                <div>
+                <div class="numbers_content">
                     <b>302</b>
-                    <p>COVID-19 response activities</p>
+                    <p>COVID-19 RESPONSE ACTIVITIES</p>
                 </div>
-                <div>
+                <div class="numbers_content">
                     <b>112,000</b>
-                    <p>Outpatient treatment for suspected COVID-19 patients</p>
+                    <p>OUTPATIENT TREATMENT FOR SUSPECTED COVID-19 PATIENTS</p>
                 </div>
             </div>
 
             <div class="graphs">
                 <div class="incomes">
                     <h5>INCOMES</h5>
-                    <div class="bold">
-                        <p>MSF Canada Private Sponsorship Income in 2020</p></div>
+                    <p>MSF Canada Private Sponsorship Income in 2020</p>
                     <div class="pie_chart">
                         <img src="@/assets/images/graph_incomes.svg" alt="graph_incomes">
-                        <h6>More than 90% are sponsored by the private donation</h6>
-                        <svg height="100" width="100">
-                            <circle cx="50" cy="50" r="40" fill="#EE0000" />
-                        </svg>
-                        <p>Private income</p>
-                        <svg height="100" width="100">
-                            <circle cx="50" cy="50" r="40" fill="#14274F" />
-                        </svg>
-                        <p>Corporate</p>
+                        <div>
+                        <h5>More than <span>90%</span> are sponsored by the private donation</h5>
+                            <div class="graphs_info">
+                                <svg x="0px" y="0px" viewBox="0 0 15 15">
+                                <circle class="st0" cx="7.5" cy="7.5" r="7.5" fill="#EE0000"/>
+                                </svg>
+                                <p>Private income</p>
+                            </div>
+
+                            <div class="graphs_info">
+                                <svg x="0px" y="0px" viewBox="0 0 15 15">
+                                <circle class="st0" cx="7.5" cy="7.5" r="7.5" fill="#14274F"/>
+                                </svg>
+                            <p>Corporate</p>
+                            </div>
+                        </div>
                     </div>
-                    <img src="@/assets/images/table_incomes.png" alt="table_incomes">
+                    <img class="table" src="@/assets/images/table_incomes.png" alt="table_incomes">
                 </div>
 
                 <div class="expenses">
                     <h5>EXPENSES</h5>
-                    <div class="bold">
-                        <p>MSF Canada Private Sponsorship Expenditure in 2020</p></div>
+                    <p>MSF Canada Private Sponsorship Expenditure in 2020</p>
                     <div class="pie_chart">
                         <img src="@/assets/images/graph_expenses.svg" alt="graph_expenses">
-                        <h6>Can you believe? Small sharing leads to this result</h6>
-                        <svg height="100" width="100">
-                            <circle cx="50" cy="50" r="40" fill="#14274F" />
-                        </svg>
-                        <p>Relief programs</p>
-                        <svg height="100" width="100">
-                            <circle cx="50" cy="50" r="40" fill="#EE0000" />
-                        </svg>
-                        <p>Fundraising</p>
-                        <svg height="100" width="100">
-                            <circle cx="50" cy="50" r="40" fill="#D1D1D1" />
-                        </svg>
-                        <p>General overhead expenses</p>
+                        <div>
+                        <h5>Can you believe? Small sharing leads to this result</h5>
+                        <div class="graphs_info">
+                            <svg x="0px" y="0px" viewBox="0 0 15 15">
+                            <circle class="st0" cx="7.5" cy="7.5" r="7.5" fill="#14274F"/>
+                            </svg>
+                            <p>Relief programs</p>
+                        </div>
+
+                        <div class="graphs_info">
+                            <svg x="0px" y="0px" viewBox="0 0 15 15">
+                            <circle class="st0" cx="7.5" cy="7.5" r="7.5" fill="#EE0000"/>
+                            </svg>
+                            <p>Fundraising</p>
+                        </div>
+
+                        <div class="graphs_info">
+                            <svg x="0px" y="0px" viewBox="0 0 15 15">
+                            <circle class="st0" cx="7.5" cy="7.5" r="7.5" fill="#D1D1D1"/>
+                            </svg>
+                            <p>General overhead expenses</p>
+                        </div>
+                        </div>
                     </div>
-                    <img src="@/assets/images/table_expenses.png" alt="table_expenses">
+                <img class="table" src="@/assets/images/table_expenses.png" alt="table_expenses">
                 </div>
             </div>
     </div>
@@ -129,37 +157,45 @@
                  treatments and vaccinations every year.</p>
 
             <div class="numbers">
-                <div>
+                <div class="numbers_content">
                     <b>9,904,200</b>
                     <p>OUTPATIENT CONSULTATIONS</p>
                 </div>
-                <div>
+                <div class="numbers_content">
                     <b>1,008,500</b>
                     <p>VACCINATIONS AGAINST MEASLES IN RESPONSE TO AN OUTBREAK</p>
                 </div>
-                <div>
+                <div class="numbers_content">
                     <b>877,300</b>
                     <p>PATIENTS ADMITTED</p>
                 </div>
             </div>
-            <button>DONATE</button>
+            <button class="contactBtn" type="button">DONATE</button>
     </div>
 
-    <div class="onnline_offline">
-            <div>
+    <div class="banner" :style="banner">
+                <div class="online">
                 <h1>ONLINE</h1>
                 <!--Don't forget to add on styles font-sixe 11, bold-->
                 <b>It takes less than 5 seconds to donate using the QR code.
                      Meet MSF on your way to work.</b>
+<<<<<<< Updated upstream
                 <button>ABOUT</button>
-            </div>
-            <div>
+=======
+                <button class="contactBtn" type="button">ABOUT</button>
+>>>>>>> Stashed changes
+                </div>
+                <div class="offline">
                 <h1>OFFLINE</h1>
-                <!--Don't forget to add on styles font-sixe 11, bold-->
+                <!--Don't forget to add on styles font-sixe 11, bold (desktop20)-->
                 <b>Use the online form to apply for volunteer work.
                      We're always waiting for you.</b>
+<<<<<<< Updated upstream
                 <button>CONTACT</button>
-            </div>
+=======
+                <button class="contactBtn" type="button">CONTACT</button>
+>>>>>>> Stashed changes
+                </div>
     </div>
   </div>
   <Footer />
@@ -176,9 +212,16 @@ export default {
     Header,
     Footer,
   },
+
+  data() {
+    return {
+      banner: { backgroundImage: 'url(https://i.ibb.co/p4vQn4y/banner.png)' },
+      promo: { backgroundImage: 'url(https://i.ibb.co/pv8JZYz/map.jpg)' },
+    };
+  },
 };
 </script>
 
 <style lang="scss">
- @import "src/assets/sass/home.scss";
+ @import "src/assets/sass/main.scss";
 </style>
